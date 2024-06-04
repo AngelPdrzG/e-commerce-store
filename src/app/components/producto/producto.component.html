@@ -177,7 +177,7 @@
             </div>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex mb-4">
           <span class="title-font font-medium text-2xl text-gray-900">
             <p class="mt-1">
               ${{ producto?.precio_venta || 0 }}
@@ -193,7 +193,12 @@
           <button
             class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
           >
-            Button
+            Comprar Ahora
+          </button>
+          <button
+            class="flex text-white bg-indigo-500 border-0 py-2 px-6 ml-6 focus:outline-none hover:bg-indigo-600 rounded"
+          >
+            Agregar al carrito
           </button>
           <button
             class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4"
@@ -221,6 +226,7 @@
         <img
           class="lg:w-7/6 w-full lg:h-24 h-12 object-cover object-center border border-slate-300 hover:border-slate-400 rounded"
           [src]="itemImg"
+          (click)="handleChangeImg(itemImg)"
         />
       </div>
     </div>

@@ -45,4 +45,8 @@ export class ProductoComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.productoSub?.unsubscribe();
   }
+
+  handleChangeImg(itemImg: string) {
+    this.currentImg = itemImg;
+  }
 }
